@@ -1,6 +1,7 @@
-import main.java.easy.Task_1636.Solution;
+import easy.Task_459.Solution;
 
 public class Main {
     public static void main(String[] args) {
+
     }
 }

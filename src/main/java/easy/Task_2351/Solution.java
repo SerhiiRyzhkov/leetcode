@@ -1,4 +1,4 @@
-package main.java.easy.Task_2351;
+package easy.Task_2351;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,12 +1,10 @@
-package test.java.easy.Task_1636;
+package easy.Task_1636;
 
-import main.java.easy.Task_1636.Solution;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-//  Sort Array by Increasing Frequency
-//  https://leetcode.com/problems/sort-array-by-increasing-frequency/
+
 class SolutionTest {
 
     Solution solution = new Solution();

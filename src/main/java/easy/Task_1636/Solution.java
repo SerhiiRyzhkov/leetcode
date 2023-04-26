@@ -1,4 +1,4 @@
-package main.java.easy.Task_1636;
+package easy.Task_1636;
 
 import java.util.*;
 

@@ -1,6 +1,6 @@
-package test.java.easy.Task_2351;
+package easy.Task_2351;
 
-import main.java.easy.Task_2351.Solution;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
