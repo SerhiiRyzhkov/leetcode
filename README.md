@@ -23,7 +23,7 @@ The solutions to LeetCode problems are organized by problem number, level and ty
 | 9 | [Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) | [Java](https://github.com/SerhiiRyzhkov/leetcode/tree/master/src/main/java/easy/Task_1945) | [Test](https://github.com/SerhiiRyzhkov/leetcode/blob/master/src/test/easy/Task_1945/SolutionTest.java) | 
 | 10 | [Check if Numbers Are Ascending in a Sentence](https://leetcode.com/problems/check-if-numbers-are-ascending-in-a-sentence/) | [Java](https://github.com/SerhiiRyzhkov/leetcode/tree/master/src/main/java/easy/Task_2042) | [Test](https://github.com/SerhiiRyzhkov/leetcode/blob/master/src/test/easy/Task_2042/SolutionTest.java) | 
 | 11 | [First Letter to Appear Twice](https://leetcode.com/problems/first-letter-to-appear-twice/) | [Java](https://github.com/SerhiiRyzhkov/leetcode/tree/master/src/main/java/easy/Task_2351) | [Test](https://github.com/SerhiiRyzhkov/leetcode/blob/master/src/test/easy/Task_2351/SolutionTest.java) | 
-| 12 | [Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/) | [SQL](https://github.com/SerhiiRyzhkov/leetcode/tree/master/src/main/sql/Task_1211) | - | 
-| 13 | [Students and Examinations](https://leetcode.com/problems/students-and-examinations/) | [SQL](https://github.com/SerhiiRyzhkov/leetcode/tree/master/src/main/sql/Task_1280) | - | 
-| 14 | [List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/) | [SQL](https://github.com/SerhiiRyzhkov/leetcode/tree/master/src/main/sql/Task_1327) | - | 
-|---| ----- | -------- | --------------------- |
+| 12 | [Queries Quality and Percentage](https://leetcode.com/problems/queries-quality-and-percentage/) | [SQL](https://github.com/SerhiiRyzhkov/leetcode/tree/master/src/main/sql/easy/Task_1211) | - | 
+| 13 | [Students and Examinations](https://leetcode.com/problems/students-and-examinations/) | [SQL](https://github.com/SerhiiRyzhkov/leetcode/tree/master/src/main/sql/easy/Task_1280) | - | 
+| 14 | [List the Products Ordered in a Period](https://leetcode.com/problems/list-the-products-ordered-in-a-period/) | [SQL](https://github.com/SerhiiRyzhkov/leetcode/tree/master/src/main/sql/easy/Task_1327) | - | 
+
