@@ -1,7 +1,6 @@
 package easy.Task_1725;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 //Number Of Rectangles That Can Form The Largest Square
