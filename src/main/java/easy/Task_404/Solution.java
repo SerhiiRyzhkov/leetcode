@@ -25,7 +25,7 @@ public class Solution {
         return result;
     }
 
-    public boolean isLeaf(TreeNode node){
+    private boolean isLeaf(TreeNode node){
         return (node.left == null) && (node.right == null);
     }
 }

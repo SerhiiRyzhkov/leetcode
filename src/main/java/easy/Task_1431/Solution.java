@@ -10,7 +10,6 @@ public class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int max = Arrays.stream(candies).max().getAsInt();
         List<Boolean>result = new ArrayList<>();
-        System.out.println(max);
         for (int candy : candies) {
             result.add(candy + extraCandies >= max);
         }
