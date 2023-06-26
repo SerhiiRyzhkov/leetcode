@@ -3,12 +3,6 @@
   https://leetcode.com/problems/students-and-examinations/
      */
 
-
-
-
-
-
-
 SELECT  students.student_id, students.student_name, subjects.subject_name, count(examinations.subject_name) as 'attended_exams'
 FROM students
          JOIN subjects
