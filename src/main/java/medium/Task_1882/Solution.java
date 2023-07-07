@@ -8,47 +8,33 @@ public class Solution {
 
     public int[] assignTasks(int[] servers, int[] tasks) {
         int[] result = new int[tasks.length];
-        int index = 0;
-        List<Integer> serversQueue = new LinkedList<>();
-        Queue<Integer> tasksQueue = new LinkedList<>();
-        Map<Integer, Integer> map = new HashMap<>();
 
-        for (int i = 0; i < servers.length; i++) {
-            map.put(i, 0);
-            serversQueue.add(i);
-        }
-        for (int task : tasks) tasksQueue.add(task);
+        Comparator<int[]> freeServComparator = (a, b) -> (a[0] == b[0]) ? (a[1] - b[1]) : (a[0] - b[0]);
+        Comparator<int[]> busyServComparator = Comparator.comparingInt(a -> a[0]);
 
+        PriorityQueue<int[]> freeServQueue = new PriorityQueue<>(freeServComparator);
+        PriorityQueue<int[]> busyServQueue = new PriorityQueue<>(busyServComparator);
 
-        /*Comparator<Integer> comparator = (o1, o2) -> {
-            if ((map.get(o1) == 0) && (map.get(o2) == 0)) {
-                return Integer.compare(servers[o2], servers[o1]);
-            } else if ((map.get(o1) == 0) && (map.get(o2) != 0)) return -1;
-            else if ((map.get(o1) != 0) && (map.get(o2)) == 0) return 1;
-            else return 0;
-        };*/
-        Comparator<Integer> comparator = (o1, o2) -> {
-            if ((map.get(o1) == 0) && (map.get(o2) == 0)) {
-                return Integer.compare(servers[o2], servers[o1]);
-            } else if ((map.get(o1) == 0) && (map.get(o2) != 0)) return -1;
-            else if ((map.get(o1) != 0) && (map.get(o2)) == 0) return 1;
-            else return 0;
-        };
+        for (int i = 0; i < servers.length; i++) freeServQueue.add(new int[]{servers[i], i});
+
+        int time = 0;
+
+        for (int i = 0; i < tasks.length; i++) {
+            time = Math.max(i, time);
+            if (freeServQueue.isEmpty()) time = busyServQueue.peek()[0];
 
 
-        while (index < tasks.length) {
-            for (Map.Entry<Integer, Integer> m : map.entrySet())
-                if (m.getValue() > 0) m.setValue(m.getValue() - 1);
-            serversQueue.sort(comparator);
-            int current_serv = -1;
-            if (map.get(serversQueue.get(0)) == 0) current_serv = serversQueue.get(0);
-
-            if (current_serv != -1) {
-                map.put(current_serv, tasksQueue.remove());
-                result[index++] = current_serv;
+            while (!busyServQueue.isEmpty() && time == busyServQueue.peek()[0]) {
+                int[] temp = busyServQueue.poll();
+                int[] freeServer = {servers[temp[1]], temp[1]};
+                freeServQueue.offer(freeServer);
             }
-        }
+            int[] server = freeServQueue.poll();
+            result[i] = server[1];
+            busyServQueue.offer(new int[]{time + tasks[i], server[1]});
 
+
+        }
         return result;
     }
 }
