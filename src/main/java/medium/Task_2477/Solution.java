@@ -26,10 +26,6 @@ public class Solution {
         }
 
 
-        System.out.println();
-        System.out.println();
-        for(Map.Entry<Integer,Integer> m: map.entrySet())
-            System.out.println(m.getKey()+":"+m.getValue());
 
 
         return -1;

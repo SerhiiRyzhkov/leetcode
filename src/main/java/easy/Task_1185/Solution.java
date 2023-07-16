@@ -17,7 +17,6 @@ public class Solution {
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
-        System.out.println(date.getDay());
 
         return switch (date.getDay()) {
             case 1 -> "Monday";

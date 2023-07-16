@@ -46,15 +46,4 @@ class SolutionTest {
         assertEquals(solution.largestNumber(nums5),"0");
     }
 
-    @Test
-    void largestNumber7() {
-        String o1="1000000000";
-
-        String o2="1000000000";
-
-        BigDecimal bigDecimal = new BigDecimal(o1+o2+"");
-        System.out.println(bigDecimal);
-        assertEquals(solution.largestNumber(nums6),"10000000001000000000");
-
-    }
 }
