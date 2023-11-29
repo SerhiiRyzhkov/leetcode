@@ -1,5 +1,5 @@
-import  easy.Task_2399.Solution;
-import easy.Task_530.TreeNode;
+import easy.Task_111.Solution;
+
 
 import java.util.*;
 
@@ -9,10 +9,6 @@ public class Main {
 
         Solution solution = new Solution();
 
-        String s = "abaccb";
-        int[] distance = {1,3,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-
-        System.out.println(solution.checkDistances(s,distance));
 
     }
 }
